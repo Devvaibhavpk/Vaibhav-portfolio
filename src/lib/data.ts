@@ -32,7 +32,7 @@ export interface Experience {
   role: string;
   organization: string;
   location?: string;
-  period: string;
+  period?: string;
   responsibilities: string[];
   type: "work" | "leadership";
 }
@@ -81,7 +81,7 @@ export const heroData = {
 
 export const aboutData = {
   bio: [
-    "I am a third-year Computer Science Engineering student specializing in Data Science at VIT Chennai.",
+    "I am a Computer Science Engineering student specializing in Data Science at VIT Chennai.",
     "My interests span Artificial Intelligence, Machine Learning, Cybersecurity, Blockchain, Full Stack Development, and emerging technologies.",
     "I enjoy building impactful products, participating in hackathons, conducting technical events, and transforming innovative ideas into real-world solutions.",
     "Apart from technology, I am passionate about cricket, guitar, and strength training. These interests have taught me discipline, consistency, leadership, creativity, and perseverance—qualities that influence both my personal and professional growth.",
@@ -96,7 +96,7 @@ export const aboutData = {
     { label: "Name", value: "Vaibhav P K" },
     { label: "Education", value: "B.Tech CSE (DS)" },
     { label: "University", value: "VIT Chennai" },
-    { label: "Year", value: "3rd Year" },
+    { label: "Year", value: "4th Year" },
     { label: "Location", value: "India" },
     { label: "Email", value: "vaibhavpk52@gmail.com" },
   ],
@@ -110,7 +110,6 @@ export const experiences: Experience[] = [
     role: "Machine Learning Intern",
     organization: "Indira Gandhi Centre for Atomic Research (IGCAR)",
     location: "Kalpakkam",
-    period: "2024",
     responsibilities: [
       "Dose Mapping and Radiation Analysis",
       "Statistical Data Analysis",
@@ -125,7 +124,6 @@ export const experiences: Experience[] = [
     role: "Event Operations & Management Lead",
     organization: "Open Source Programming Club (OSPC)",
     location: "VIT Chennai",
-    period: "2023 — Present",
     responsibilities: [
       "Organized multiple national-level hackathons",
       "Coordinated technical events",

@@ -73,10 +73,12 @@ export default function Experience() {
                         {exp.location}
                       </div>
                     )}
-                    <div className="flex items-center gap-1.5">
-                      <Calendar size={14} />
-                      {exp.period}
-                    </div>
+                    {exp.period && (
+                      <div className="flex items-center gap-1.5">
+                        <Calendar size={14} />
+                        {exp.period}
+                      </div>
+                    )}
                   </div>
 
                   {/* Responsibilities */}
